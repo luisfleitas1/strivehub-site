@@ -11,7 +11,7 @@ const fade = (i: number) => ({
 
 const HeroSection = ({ onCTA }: { onCTA: () => void }) => (
   <section className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
-    <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div className="space-y-6 text-center md:text-left">
         <motion.p {...fade(0)} className="text-sm font-semibold tracking-[0.2em] uppercase" style={{ color: "#4CAF84" }}>
           Daily Fitness Guidance
