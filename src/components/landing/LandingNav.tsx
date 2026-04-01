@@ -21,7 +21,7 @@ const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
 
         <div className="flex items-center gap-3">
           <button
-            onClick={() => navigate("/auth")}
+            onClick={() => window.location.href = "https://app.strivehub.ai/auth"}
             className="text-sm font-medium px-4 py-2 rounded-full transition-colors hover:bg-black/5"
             style={{ color: "#6B7378" }}
           >
