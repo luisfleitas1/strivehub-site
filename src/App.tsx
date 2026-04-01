@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound";
 
 const App = () => (
   <ThemeProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/strivehub-site">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/landing" element={<LandingPage />} />
