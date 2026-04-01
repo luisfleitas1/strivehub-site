@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ALTER COLUMN goal TYPE text[] USING CASE WHEN goal IS NULL THEN '{}' ELSE ARRAY[goal] END, ALTER COLUMN goal SET DEFAULT '{}';

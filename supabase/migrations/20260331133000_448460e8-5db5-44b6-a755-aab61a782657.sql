@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS body_fat numeric, ADD COLUMN IF NOT EXISTS target_body_fat numeric;
