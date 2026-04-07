@@ -1,3 +1,4 @@
+import { APP_URL } from "@/config";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import logo from "@/assets/strivehub-logo-new.png";
@@ -21,7 +22,7 @@ const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
 
         <div className="flex items-center gap-3">
           <button
-            onClick={() => window.location.href = "https://app.strivehub.ai"}
+            onClick={() => window.location.href = APP_URL}
             className="text-sm font-medium px-4 py-2 rounded-full transition-colors hover:bg-black/5"
             style={{ color: "#6B7378" }}
           >
