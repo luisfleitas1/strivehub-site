@@ -1,0 +1,15 @@
+{
+  "name": "StriveHub",
+  "short_name": "StriveHub",
+  "description": "AI-powered fitness and nutrition coach combining Apple Health, Garmin, workouts, meals, and personalized insights.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF84",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
