@@ -29,7 +29,7 @@ const CTASection = () => {
       <div className="max-w-2xl mx-auto px-5">
         <motion.div {...fade(0)} className="rounded-3xl p-8 md:p-12 text-center" style={{ background: "#F7F8FA", border: "1px solid #ECEEF0" }}>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3" style={{ color: "#2F3437" }}>
-            Stop guessing. Start improving.
+            Stop guessing. See the whole picture.
           </h2>
           <p className="text-base mb-8" style={{ color: "#6B7378" }}>
             Join the early access list and be first to try StriveHub.

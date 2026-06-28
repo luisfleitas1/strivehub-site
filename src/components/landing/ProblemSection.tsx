@@ -9,9 +9,9 @@ const fade = (i: number) => ({
 });
 
 const cards = [
-  { icon: BarChart3, title: "Too much data", desc: "Sleep, HRV, workouts, calories — but no clear answer on what to do today." },
-  { icon: Puzzle, title: "Too many disconnected tools", desc: "One app for lifting. Another for running. Another for nutrition. Nothing works together." },
-  { icon: HelpCircle, title: "Too much guessing", desc: "You're left deciding whether to train, recover, run, or eat better — without a clear system." },
+  { icon: BarChart3, title: "Too much fragmented data", desc: "Your sleep is in one app. Your training is in another. Your nutrition is somewhere else." },
+  { icon: Puzzle, title: "Too many point solutions", desc: "Wearables, workout apps, recovery apps, food tracking. Each gives you part of the story, not the whole picture." },
+  { icon: HelpCircle, title: "Too little real progress", desc: "You can run more, lift more, or track more, but if sleep and nutrition are off, progress still stalls." },
 ];
 
 const ProblemSection = () => (
@@ -20,16 +20,23 @@ const ProblemSection = () => (
       {/* Core positioning */}
       <motion.div {...fade(0)} className="text-center mb-16">
         <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2" style={{ color: "#2F3437" }}>
-          StriveHub doesn't just track your fitness.
+          Your fitness data is fragmented.
         </h2>
         <p className="text-lg font-semibold" style={{ color: "#4CAF84" }}>
-          It tells you what to do with it.
+          Your decisions shouldn't be.
+        </p>
+        <p className="text-sm mt-3 max-w-lg mx-auto" style={{ color: "#6B7378" }}>
+          Garmin tracks one thing. Nutrition apps track another. Workout apps track another.
+          <br />StriveHub helps you see the big picture.
         </p>
       </motion.div>
 
       <motion.h2 {...fade(0)} className="text-3xl md:text-4xl font-bold text-center tracking-tight mb-4" style={{ color: "#2F3437" }}>
-        Most fitness apps give you data — not direction.
+        Most fitness tools help you track one thing.
       </motion.h2>
+      <motion.p {...fade(0)} className="text-center text-base mb-2" style={{ color: "#6B7378" }}>
+        Very few help you understand the whole picture.
+      </motion.p>
       <div className="grid md:grid-cols-3 gap-5 mt-12">
         {cards.map((c, i) => {
           const Icon = c.icon;
@@ -45,7 +52,7 @@ const ProblemSection = () => (
         })}
       </div>
       <motion.p {...fade(4)} className="text-center text-sm mt-10 max-w-lg mx-auto" style={{ color: "#6B7378" }}>
-        StriveHub turns scattered fitness signals into one clear daily decision.
+        StriveHub was built to turn fragmented fitness signals into one clear daily decision.
       </motion.p>
     </div>
   </section>

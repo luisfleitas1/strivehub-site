@@ -9,16 +9,16 @@ const fade = (i: number) => ({
 });
 
 const steps = [
-  { num: "1", icon: Link2, title: "Connect your data", desc: "Use Garmin, manual logs, or simple inputs to give StriveHub context." },
-  { num: "2", icon: BarChart3, title: "Understand your body", desc: "Your recovery, strength, cardio, and nutrition are translated into a system you can actually use." },
-  { num: "3", icon: Target, title: "Follow your plan", desc: "Open the app and instantly know what matters most today." },
+  { num: "1", icon: Link2, title: "Connect your data", desc: "Use Apple Health, Strong, meals, and activity data." },
+  { num: "2", icon: BarChart3, title: "Understand what matters", desc: "StriveHub turns your data into clear priorities." },
+  { num: "3", icon: Target, title: "Follow today's plan", desc: "Know the next best action instead of guessing." },
 ];
 
 const HowItWorksSection = () => (
   <section id="how-it-works" className="py-20 md:py-28" style={{ background: "#fff" }}>
     <div className="max-w-5xl mx-auto px-5">
       <motion.p {...fade(0)} className="text-center text-sm font-medium mb-3" style={{ color: "#4CAF84" }}>
-        From data → to direction
+        See the whole picture. Act with clarity.
       </motion.p>
       <motion.h2 {...fade(0)} className="text-3xl md:text-4xl font-bold text-center tracking-tight mb-14" style={{ color: "#2F3437" }}>
         How StriveHub works

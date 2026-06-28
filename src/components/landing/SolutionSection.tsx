@@ -10,15 +10,15 @@ const fade = (i: number) => ({
 
 const cards = [
   { icon: Compass, title: "Daily direction", desc: "Get one clear recommendation based on how your body is doing today." },
-  { icon: BarChart2, title: "Personalized scoring", desc: "Understand your recovery, strength, cardio, and nutrition at a glance." },
-  { icon: Zap, title: "Simple, actionable guidance", desc: "No bloated dashboards. No overthinking. Just the next best step." },
+  { icon: BarChart2, title: "Personalized guidance", desc: "See what matters today based on your goals, training, recovery, and habits." },
+  { icon: Zap, title: "Actionable guidance", desc: "Not more dashboards. Not more guesswork. Just the next best step." },
 ];
 
-const scores = [
-  { label: "Recovery", value: 78, color: "#7B61FF" },
-  { label: "Strength", value: 82, color: "#4CAF84" },
-  { label: "Cardio", value: 61, color: "#4A90E2" },
-  { label: "Nutrition", value: 65, color: "#F5A623" },
+const goals = [
+  { label: "Strength", value: "1 / 2", sub: "sessions", color: "#4CAF84" },
+  { label: "Cardio", value: "2 / 2", sub: "sessions", color: "#4A90E2" },
+  { label: "Protein", value: "147g", sub: "of 140g", color: "#F5A623" },
+  { label: "Sleep", value: "7h 15m", sub: "last night", color: "#7B61FF" },
 ];
 
 const SolutionSection = () => (
@@ -28,7 +28,7 @@ const SolutionSection = () => (
         One app. One clear plan.
       </motion.h2>
       <motion.p {...fade(1)} className="text-center text-sm font-medium mb-2" style={{ color: "#4CAF84" }}>
-        From scattered data → to one clear decision
+        From fragmented inputs → to one clear next step
       </motion.p>
       <motion.p {...fade(1)} className="text-center text-base max-w-xl mx-auto mb-12" style={{ color: "#6B7378" }}>
         StriveHub combines your recovery, training, cardio, and nutrition into a simple daily recommendation you can actually follow.
@@ -49,12 +49,12 @@ const SolutionSection = () => (
         })}
       </div>
 
-      {/* Score cards visual */}
       <motion.div {...fade(5)} className="flex justify-center gap-4 flex-wrap">
-        {scores.map((s) => (
-          <div key={s.label} className="rounded-2xl p-5 w-[140px] bg-white border shadow-sm text-center" style={{ borderColor: "#ECEEF0" }}>
-            <p className="text-xs font-medium mb-2" style={{ color: "#6B7378" }}>{s.label}</p>
-            <p className="text-3xl font-bold" style={{ color: s.color }}>{s.value}</p>
+        {goals.map((g) => (
+          <div key={g.label} className="rounded-2xl p-5 w-[140px] bg-white border shadow-sm text-center" style={{ borderColor: "#ECEEF0" }}>
+            <p className="text-xs font-medium mb-2" style={{ color: "#6B7378" }}>{g.label}</p>
+            <p className="text-2xl font-bold leading-tight" style={{ color: g.color }}>{g.value}</p>
+            <p className="text-xs mt-1" style={{ color: "#9CA3A8" }}>{g.sub}</p>
           </div>
         ))}
       </motion.div>

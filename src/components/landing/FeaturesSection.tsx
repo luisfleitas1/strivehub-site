@@ -9,17 +9,17 @@ const fade = (i: number) => ({
 });
 
 const features = [
-  { icon: BedDouble, title: "Recovery", desc: "Know when to push and when to pull back based on sleep, HRV, and readiness trends.", color: "#7B61FF", bg: "rgba(123,97,255,0.08)" },
-  { icon: Dumbbell, title: "Strength", desc: "See whether your training is building momentum or needs adjustment.", color: "#4CAF84", bg: "rgba(76,175,132,0.08)" },
-  { icon: Activity, title: "Cardio", desc: "Stay consistent and improve endurance without overcomplicating your week.", color: "#4A90E2", bg: "rgba(74,144,226,0.08)" },
-  { icon: UtensilsCrossed, title: "Nutrition", desc: "Get simple guidance that helps you stay on track without calorie obsession.", color: "#F5A623", bg: "rgba(245,166,35,0.08)" },
+  { icon: BedDouble, title: "Recovery", desc: "Know whether recovery deserves attention today based on sleep, HRV, and readiness trends.", color: "#7B61FF", bg: "rgba(123,97,255,0.08)" },
+  { icon: Dumbbell, title: "Strength", desc: "See whether your training is building momentum or stalling out.", color: "#4CAF84", bg: "rgba(76,175,132,0.08)" },
+  { icon: Activity, title: "Cardio", desc: "See where cardio fits into your weekly plan and what to do next.", color: "#4A90E2", bg: "rgba(74,144,226,0.08)" },
+  { icon: UtensilsCrossed, title: "Nutrition", desc: "Get simple guidance that helps your training and recovery work together.", color: "#F5A623", bg: "rgba(245,166,35,0.08)" },
 ];
 
 const FeaturesSection = () => (
   <section className="py-20 md:py-28" style={{ background: "#F7F8FA" }}>
     <div className="max-w-5xl mx-auto px-5">
       <motion.h2 {...fade(0)} className="text-3xl md:text-4xl font-bold text-center tracking-tight mb-14" style={{ color: "#2F3437" }}>
-        Built to help you improve, not just track
+        Built for people who know progress is connected
       </motion.h2>
       <div className="grid sm:grid-cols-2 gap-5">
         {features.map((f, i) => {

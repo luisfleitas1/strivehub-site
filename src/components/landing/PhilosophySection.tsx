@@ -13,11 +13,16 @@ const PhilosophySection = () => (
       <motion.h2 {...fade(0)} className="text-3xl md:text-4xl font-bold tracking-tight mb-5" style={{ color: "#2F3437" }}>
         Fitness guidance for people who already care
       </motion.h2>
-      <motion.p {...fade(1)} className="text-base leading-relaxed mb-4" style={{ color: "#6B7378" }}>
-        StriveHub is built for people who want to train intelligently, recover better, and stay consistent — without managing five different apps or overanalyzing every metric.
+      <motion.p {...fade(1)} className="text-base leading-relaxed mb-6" style={{ color: "#6B7378" }}>
+        StriveHub is built for people who already care about their health and performance, but are tired of piecing together recovery, training, cardio, and nutrition across multiple apps and devices.
       </motion.p>
-      <motion.p {...fade(2)} className="text-sm font-medium italic" style={{ color: "#4CAF84" }}>
-        It's not about tracking more. It's about knowing what matters today.
+      <motion.p {...fade(2)} className="text-sm leading-relaxed mb-4" style={{ color: "#6B7378" }}>
+        What good is running more if you're not recovering well?
+        <br />
+        What good is strength training if your nutrition is working against you?
+      </motion.p>
+      <motion.p {...fade(3)} className="text-sm font-medium italic" style={{ color: "#4CAF84" }}>
+        It's not about tracking more. It's about seeing the whole picture and knowing what matters today.
       </motion.p>
     </div>
   </section>
