@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
-  const navigate = useNavigate();
 
   return (
     <motion.nav
@@ -17,9 +15,13 @@ const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
           StriveHub
         </span>
         <div className="flex items-center gap-3">
-          <button onClick={() => navigate("/auth")} className="text-sm font-medium px-4 py-2 rounded-full transition-colors hover:bg-black/5" style={{ color: "#6B7378" }}>
-            Sign in
-          </button>
+         <a
+  href="https://app.strivehub.ai/auth"
+  className="text-sm font-medium px-4 py-2 rounded-full transition-colors hover:bg-black/5"
+  style={{ color: "#6B7378" }}
+>
+  Sign in
+</a>
           <button onClick={onCTA} className="text-sm font-semibold px-5 py-2 rounded-full text-white transition-all hover:scale-[1.02]" style={{ background: "linear-gradient(135deg, #4CAF84, #3d9a72)" }}>
             Get early access
           </button>
