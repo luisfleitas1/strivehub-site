@@ -40,7 +40,7 @@ const HeroSection = ({ onCTA }: { onCTA: () => void }) => (
         </motion.p>
       </div>
       <motion.div {...fade(2)} className="flex justify-center">
-        <img src={heroMockup} alt="StriveHub app showing today's strength, cardio, protein, and sleep goal progress" width={480} height={480} fetchPriority="high" decoding="async" className="w-full max-w-[420px] drop-shadow-2xl" />
+        <img src={heroMockup} alt="StriveHub app showing a daily coach insight above the recovery, nutrition, strength, and cardio goal tiles" width={480} height={512} fetchPriority="high" decoding="async" className="w-full max-w-[420px]" style={{ background: "transparent" }} />
       </motion.div>
     </div>
   </section>

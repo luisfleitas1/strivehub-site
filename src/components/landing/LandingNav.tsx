@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import logo from "@/assets/strivehub-logo.png";
+
 
 const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
 
@@ -11,9 +13,8 @@ const LandingNav = ({ onCTA }: { onCTA: () => void }) => {
       style={{ background: "rgba(247,248,250,0.85)", borderColor: "#ECEEF0" }}
     >
       <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-        <span className="text-lg font-bold tracking-tight" style={{ color: "#2F3437" }}>
-          StriveHub
-        </span>
+        <img src={logo} alt="StriveHub" className="h-8 w-auto" />
+
         <div className="flex items-center gap-3">
          <a
   href="https://app.strivehub.ai/auth"

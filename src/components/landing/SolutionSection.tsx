@@ -15,10 +15,10 @@ const cards = [
 ];
 
 const goals = [
-  { label: "Strength", value: "1 / 2", sub: "sessions", color: "#4CAF84" },
-  { label: "Cardio", value: "2 / 2", sub: "sessions", color: "#4A90E2" },
-  { label: "Protein", value: "147g", sub: "of 140g", color: "#F5A623" },
-  { label: "Sleep", value: "7h 15m", sub: "last night", color: "#7B61FF" },
+  { label: "Recovery",  value: "7h 15m", sub: "last night",  color: "#594CF7" },
+  { label: "Nutrition", value: "147g",   sub: "of 140g",     color: "#2FC7B5" },
+  { label: "Strength",  value: "1 / 2",  sub: "sessions",    color: "#1291F3" },
+  { label: "Cardio",    value: "2 / 2",  sub: "sessions",    color: "#FFB716" },
 ];
 
 const SolutionSection = () => (

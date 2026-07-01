@@ -10,9 +10,9 @@ const fade = (i: number) => ({
 
 const features = [
   { icon: BedDouble, title: "Recovery", desc: "Know whether recovery deserves attention today based on sleep, HRV, and readiness trends.", color: "#7B61FF", bg: "rgba(123,97,255,0.08)" },
-  { icon: Dumbbell, title: "Strength", desc: "See whether your training is building momentum or stalling out.", color: "#4CAF84", bg: "rgba(76,175,132,0.08)" },
-  { icon: Activity, title: "Cardio", desc: "See where cardio fits into your weekly plan and what to do next.", color: "#4A90E2", bg: "rgba(74,144,226,0.08)" },
-  { icon: UtensilsCrossed, title: "Nutrition", desc: "Get simple guidance that helps your training and recovery work together.", color: "#F5A623", bg: "rgba(245,166,35,0.08)" },
+  { icon: UtensilsCrossed, title: "Nutrition", desc: "Get simple guidance that helps your training and recovery work together.", color: "#2FC7B5", bg: "rgba(47,199,181,0.08)" },
+  { icon: Dumbbell, title: "Strength", desc: "See whether your training is building momentum or stalling out.", color: "#1291F3", bg: "rgba(18,145,243,0.08)" },
+  { icon: Activity, title: "Cardio", desc: "See where cardio fits into your weekly plan and what to do next.", color: "#FFB716", bg: "rgba(255,183,22,0.10)" },
 ];
 
 const FeaturesSection = () => (

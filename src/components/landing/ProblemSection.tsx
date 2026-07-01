@@ -25,10 +25,6 @@ const ProblemSection = () => (
         <p className="text-lg font-semibold" style={{ color: "#4CAF84" }}>
           Your decisions shouldn't be.
         </p>
-        <p className="text-sm mt-3 max-w-lg mx-auto" style={{ color: "#6B7378" }}>
-          Garmin tracks one thing. Nutrition apps track another. Workout apps track another.
-          <br />StriveHub helps you see the big picture.
-        </p>
       </motion.div>
 
       <motion.h2 {...fade(0)} className="text-3xl md:text-4xl font-bold text-center tracking-tight mb-4" style={{ color: "#2F3437" }}>
@@ -51,9 +47,6 @@ const ProblemSection = () => (
           );
         })}
       </div>
-      <motion.p {...fade(4)} className="text-center text-sm mt-10 max-w-lg mx-auto" style={{ color: "#6B7378" }}>
-        StriveHub was built to turn fragmented fitness signals into one clear daily decision.
-      </motion.p>
     </div>
   </section>
 );
