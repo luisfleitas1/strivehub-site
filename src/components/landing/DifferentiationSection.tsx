@@ -14,8 +14,8 @@ const points = [
   "One system that helps the pieces work together",
 ];
 
-const available = ["Apple Health", "Strong", "AI Meal Logging"];
-const upcoming = ["Garmin", "Strava", "Whoop", "MyFitnessPal", "Oura"];
+const available = ["Apple Health", "Strava", "Strong", "AI Meal Logging"];
+const upcoming = ["Garmin", "Whoop", "MyFitnessPal", "Oura"];
 
 const DifferentiationSection = () => (
   <section className="py-20 md:py-28" style={{ background: "#fff" }}>
