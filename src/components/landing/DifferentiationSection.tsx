@@ -49,7 +49,8 @@ const DifferentiationSection = () => (
           </div>
         </div>
         <div>
-          <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "#9CA3A8" }}>Coming soon</p>
+          <p className="text-xs font-bold tracking-widest uppercase mb-1" style={{ color: "#9CA3A8" }}>Next on the roadmap</p>
+          <p className="text-[11px] mb-3" style={{ color: "#9CA3A8" }}>We're expanding support beyond today's integrations.</p>
           <div className="flex flex-wrap gap-2 justify-center">
             {upcoming.map((u) => (
               <span key={u} className="inline-flex items-center rounded-full px-3.5 py-1.5 text-xs font-medium border" style={{ background: "#FAFBFC", borderColor: "#ECEEF0", color: "#6B7378" }}>
